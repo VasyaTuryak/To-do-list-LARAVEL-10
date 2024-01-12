@@ -62,7 +62,7 @@ Route::put('tasks/{task}/toggle-complete',function (Task $task){
    return redirect()->back()->with('status','Status changed successfully');
 })->name('task.toggle');
 
-Route::fallback(function (){
-    return'incorrect page';
-});
+//Route::fallback(function (){
+//    return'incorrect page';
+//});
 
